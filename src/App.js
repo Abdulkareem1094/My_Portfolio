@@ -1,10 +1,13 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import NavMenu from './components/NavMenu';
 
 export default function App() {
   return (
     <>
-      <h1>Welcome to react portfolio Project</h1>
-      <h3>-Shaif Arfan</h3>
+      <Router>
+        <NavMenu />
+      </Router>
     </>
   );
 }
