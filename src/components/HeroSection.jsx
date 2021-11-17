@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImg from '../assets/images/hero.png'
+import HeroImg from '../assets/images/hero.jpg'
 import Button from './Button'
 import PTxt from './PTxt'
 
@@ -23,7 +23,7 @@ const HeroSection = () => {
                     <Button 
                     projectBtnLink='/projects' 
                     projectBtnTxt='See My Work'
-                    BtnOutline={false} 
+                    BtnOutline={true} 
                     />
                 </div>
             </div>
