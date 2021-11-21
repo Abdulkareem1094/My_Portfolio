@@ -8,13 +8,13 @@ const ButtonStyle = styled.div`
         font-size: 2rem;
         padding: 0.7em 2em;
         background-color: ${(BtnOutline) =>
-            BtnOutline ? 'var(--transparent-dark)' : 'var(--white)'
+            !BtnOutline ? 'red' : 'var(--transparent-dark)'
         };
         border-radius: 8px;
         display: inline-block;
         border: 2px solid var(--gray-1);
         color: ${(BtnOutline) => 
-            BtnOutline ? 'var(--white)' : 'var(--gray-1)'
+            BtnOutline ? 'var(--gray-1)' : 'var(--gray-1)'
         };
     }
     @media only screen and (max-width: 768px) {

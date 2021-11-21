@@ -10,7 +10,7 @@ const NavMenuStyles = styled.div`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--dark-bg);
+  background-color: #303137;
     
   ul{
     margin: 0 auto;
@@ -26,7 +26,7 @@ const NavMenuStyles = styled.div`
     }
     a{
       display: inline-block;
-      font-family: 'RobotoMono Reguler';
+      font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
       color: var(--gray-1);

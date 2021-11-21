@@ -19,7 +19,7 @@ const HeroStyles = Styled.div`
     }
     .hero__heading {
         font-size: 2rem;
-        margin-bottom: -3.5rem;
+        margin-bottom: -3.7rem;
         position: relative;
         margin-top: 150px;
         span{
@@ -38,9 +38,17 @@ const HeroStyles = Styled.div`
         height: 600px;
         margin: 0 auto;
         border: 2px solid var(--gray-1);
+        border-radius: 8px;
+        padding: 1px;
+        img{
+            border-radius: 8px;
+        }
     }
     .hero__info{
         margin-top: -18rem;
+        .p{
+            color: var(--white);
+        }
     }
     .hero__socials,
     .hero__scroleDown{
@@ -97,15 +105,21 @@ const HeroStyles = Styled.div`
                 font-size: 3.5rem;
             }
         }
+        .hero__heading{
+            margin-bottom: -2rem;
+        }
         .hero__img{
             height: 300px;
         }
         .hero__info{
-            // margin-top: -15rem;
+            margin-top: 1rem;
+            .p{
+                color: var(--gray-1);
+            }
         }
         .hero__socials{
             left: 0px;
-            bottom: -50%;
+            bottom: -30%;
             width: 20px;
             .hero__socials__indicator{
                 width: 20px;
@@ -113,7 +127,7 @@ const HeroStyles = Styled.div`
                     font-size: 1.2rem;
                 }
                 img{
-                    max-height: 22px;
+                    max-height: 50px;
                 }
             }
             .hero__socialImg{
@@ -125,6 +139,15 @@ const HeroStyles = Styled.div`
                         }
                     }
                 }
+            }
+        }
+        .hero__scroleDown{
+            right: 0;
+            width: 20px;
+            gap: 1rem;
+            // bottom: 5%;
+            p{
+                font-size: 1.3rem;
             }
         }
     }

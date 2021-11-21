@@ -7,11 +7,10 @@ margin: 0 auto;
 font-size: 1.8rem;
 line-height: 1.3em;
 text-align: center;
-color: orange;
+
 @media only screen and (max-width: 768px){
     p{
-        font-size: 1.25rem;
-        color: var(--white);
+        font-size: 1.25rem; 
     }
 }
 `;
@@ -19,7 +18,7 @@ color: orange;
 const PTxt = ({children}) => {
     return (
         <PSetyles>
-            <p>
+            <p className="p">
                 {children}
             </p>
         </PSetyles>
