@@ -5,10 +5,14 @@ const PSetyles = styled.div`
 max-width: 500px;
 margin: 0 auto;
 font-size: 1.8rem;
-line-height: 1.3rem;
+line-height: 1.3em;
 text-align: center;
-@media only screeen and (max-width: 768px){
-    font-size: 1.4rem;
+color: orange;
+@media only screen and (max-width: 768px){
+    p{
+        font-size: 1.25rem;
+        color: var(--white);
+    }
 }
 `;
 

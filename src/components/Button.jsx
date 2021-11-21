@@ -24,10 +24,18 @@ const ButtonStyle = styled.div`
     }
 `;
 
-const Button = ({ projectBtnLink, projectBtnTxt, BtnOutline }) => {
+const Button = ({ 
+    projectBtnLink ="Link",
+     projectBtnTxt ="Text",
+      BtnOutline,
+     }) => {
     return (
         <ButtonStyle BtnOutline={BtnOutline} >
-            <Link to={ projectBtnLink } className='button'>{ projectBtnTxt }</Link>
+            <Link 
+            to={ projectBtnLink } 
+            className='button'>
+                { projectBtnTxt }
+            </Link>
         </ButtonStyle>
     )
 }
