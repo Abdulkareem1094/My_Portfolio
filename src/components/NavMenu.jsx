@@ -10,7 +10,7 @@ const NavMenuStyles = styled.div`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background-color: #303137;
+  background-color: #202127;
     
   ul{
     margin: 0 auto;
@@ -20,20 +20,20 @@ const NavMenuStyles = styled.div`
       display: inline-block;
       border-radius: 8px;
       transition: 0.3s ease bacground-color;
-      &:hover {
-        background-color: var(--deep-dark);
-      }
     }
     a{
       display: inline-block;
       font-family: 'RobotoMono Regular';
-      padding: 1rem 2rem;
+      margin : 1rem 2rem;
       font-size: 2rem;
       color: var(--gray-1);
       outline: none;
+      &:hover {
+        color: bisque;
+      }
     }
     .active{
-      color: var(--white);
+      color: bisque;
     }
   }
   .mobile-menu-icon{
@@ -63,11 +63,11 @@ const NavMenuStyles = styled.div`
       --top: 1rem;
       text-align: center;
       transition: 0.3s ease transform;
-      background-color: var(--deep-dark);
+      background-color: #303137;
       paddind: 2rem;
       width: 90%;
       max-width:300px;
-      border-radius:10px;
+      border-radius:8px;
       position: absolute;
       right: 1rem;
       top: var(--top);
@@ -80,10 +80,10 @@ const NavMenuStyles = styled.div`
           pointer-events: none;
         }
       }
-      li{
-        display: block;
-        margin-bottom: 1rem; 
-      }
+        li{
+          display: block;
+          margin-bottom: 1rem; 
+        }
     }
   }
 `;

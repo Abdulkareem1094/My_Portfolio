@@ -19,7 +19,7 @@ const HeroStyles = Styled.div`
     }
     .hero__heading {
         font-size: 2rem;
-        margin-bottom: -3.7rem;
+        margin-bottom: -3.9rem;
         position: relative;
         margin-top: 150px;
         span{
@@ -37,7 +37,7 @@ const HeroStyles = Styled.div`
         width: 100%;
         height: 600px;
         margin: 0 auto;
-        border: 2px solid var(--gray-1);
+        border: 2px solid #303137;
         border-radius: 8px;
         padding: 1px;
         img{
@@ -160,7 +160,7 @@ const HeroSection = () => {
                 <div className="container">
                     <h1 className="hero__heading">
                         <span>Hello, This is</span>
-                        <span className='hero__name'>Abdulkareem</span>
+                        <span className='hero__name'>ABDULKAREEM</span>
                     </h1>
                     <div className="hero__img">
                         <img src={HeroImg} alt="" />

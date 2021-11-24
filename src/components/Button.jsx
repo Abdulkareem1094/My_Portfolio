@@ -12,7 +12,7 @@ const ButtonStyle = styled.div`
         };
         border-radius: 8px;
         display: inline-block;
-        border: 2px solid var(--gray-1);
+        border: 2px solid #303137;
         color: ${(BtnOutline) => 
             BtnOutline ? 'var(--gray-1)' : 'var(--gray-1)'
         };
