@@ -10,7 +10,7 @@ text-align: center;
 
 @media only screen and (max-width: 768px){
     p{
-        font-size: 1.25rem; 
+        font-size: 1.2rem; 
     }
 }
 `;

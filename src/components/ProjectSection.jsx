@@ -10,7 +10,7 @@ import 'swiper/swiper-bundle.min.css'
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyles = styled.div`
-    margin-top: 40rem;
+    margin-top: 40rem ;
     padding: 10rem 0;
     .projects__allItems{
         display: flex;
@@ -42,30 +42,62 @@ const ProjectSectionStyles = styled.div`
     .swiper-button-next::after{
         font-size: 2rem;
     }
+    @media only screen and (max-width: 768px){
+        .projects__allItems{
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 7rem;
+            gap: 5rem;
+            .projectItem__img{
+                width: 100%;
+            }
+        }
+    }
 `;
 
 const ProjectSection = () => {
     return (
         <ProjectSectionStyles>
-            <SectionTitle
-                 SubHeading='Some of my recent works'
-                 Heading='Projects'
-            />
-            <div className="projects__allItems">
-                <Swiper 
-                spaceBetween={30}
-                slidesPerView={1}
-                navigation
-                >
-                    {projects.map((project, index) => {
-                        if (index >= 5) return;
-                        return (
-                            <SwiperSlide key={project.id}>
-                                <ProjectItem/>
-                            </SwiperSlide>
-                        )
-                    })}
-                </Swiper>
+            <div className="container">
+                <SectionTitle
+                    SubHeading='Some of my recent works'
+                    Heading='Projects'
+                />
+                <div className="projects__allItems">
+                    <Swiper
+                        spaceBetween={30}
+                        slidesPerView={1}
+                        navigation
+                        breakpoints={
+                            //When windows width is 
+                            {
+                                640:{
+                                    slidesPerView: 1,
+                                },
+                                768:{
+                                    slidesPerView: 2,
+                                },
+                                1200:{
+                                    slidesPerView: 3,
+                                },
+                            }
+                        }
+                    >
+                        {projects.map((project, index) => {
+                            if (index >= 5) return;
+                            return (
+                                <SwiperSlide key={project.id}>
+                                    <ProjectItem 
+                                    img={project.img}
+                                    title={project.name}
+                                    desc={project.desc}
+                                    />
+                                </SwiperSlide>
+                            )
+                        })}
+                    </Swiper>
+                </div>
             </div>
         </ProjectSectionStyles>
     )

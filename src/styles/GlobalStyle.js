@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     --gray-2: #363636;
     --white : white;
     --black: black;
-    --transparent-dark:rgba(0, 0, 0, 0.385);
+    --transparent-dark:rgba(0, 0, 0, 0.585);
   }
   html{
     font-size: 10px;

@@ -36,21 +36,21 @@ const ProjectItemStyle = styled.div`
     }
 `;
 
-const ProjectItem = () => {
+const ProjectItem = ({
+    title= 'Project Name',
+    img= ProjectImage,
+    desc= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dignissimos ratione unde soluta quas odio magni totam deserunt laudantium iure neque temporibus,incidunt aliquam cum blanditiis perspiciatis laborum cupiditate veniam?"
+}) => {
     return (
         <ProjectItemStyle>
             <Link to='/projects' className='projectItem__img'>
-                <img src={ProjectImage} alt="Project Img" />
+                <img src={img} alt="Project Img" />
             </Link>
             <div className="projectItem__info">
                 <Link to="/projects">
-                    <h3 className="projectItem__Title">Project 1</h3>
+                    <h3 className="projectItem__Title">{title}</h3>
+                    <p className="projectItem__desc">{desc}</p>
                 </Link>
-                    <p className="projectItem__desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dignissimos 
-                        ratione unde soluta quas odio magni totam deserunt laudantium iure neque temporibus,
-                        incidunt aliquam cum blanditiis perspiciatis laborum cupiditate veniam?
-                    </p>
             </div>
         </ProjectItemStyle>
     )

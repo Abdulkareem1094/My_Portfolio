@@ -29,7 +29,7 @@ const HeroStyles = Styled.div`
         .hero__name{
             font-size: 7rem;
             font-family: 'Montserrat SemiBold';
-            color: var(--white);
+            color: bisque;
         }
     }
     .hero__img{
@@ -102,7 +102,7 @@ const HeroStyles = Styled.div`
             min-height: 1.4rem;
             margin-bottom: -3rem;
              .hero__name{
-                font-size: 3.5rem;
+                font-size: 3rem;
             }
         }
         .hero__heading{
@@ -145,7 +145,6 @@ const HeroStyles = Styled.div`
             right: 0;
             width: 20px;
             gap: 1rem;
-            // bottom: 5%;
             p{
                 font-size: 1.3rem;
             }
@@ -167,7 +166,7 @@ const HeroSection = () => {
                     </div>
                     <div className="hero__info">
                         <PTxt>
-                            I am working as a freelance web developer.<br />
+                            I am working as a freelance web developer.<br/>
                             I love making unique Wab Apps that
                             give users new experiences.
                         </PTxt>

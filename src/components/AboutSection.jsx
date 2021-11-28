@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import AboutImg from '../assets/images/hero.jpg'
+import AboutImg from '../assets/images/about-page-img.jpg'
 import Button from './Button';
 import PTxt from './PTxt'
 import SectionTitle from './SectionTitle'
